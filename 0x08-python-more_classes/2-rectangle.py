@@ -5,7 +5,7 @@
 class Rectangle:
     """Represents rectangle"""
 
-    def __int__(sel, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
         Args:
             width (int): The width of the new rectangle.
