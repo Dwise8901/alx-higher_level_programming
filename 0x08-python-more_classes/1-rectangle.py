@@ -11,16 +11,20 @@ class Rectangle:
             with (int): The width of the new rectangle.
             height (int): The height of the new rectangle.
         """
-        self.width = width
         self.height = height
+        self.width = width
 
     @property
-    def width(self):
+    def height(self):
         """Get/set the width of the rectangle."""
-        return self.__width
+        return self.__height
 
-    @width.setter
-    def width(self, value):
+    @height.setter
+    def height(self, value):
+        """
+            Checking for TypeError and ValueError
+            then settingup the private var
+        """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -28,14 +32,18 @@ class Rectangle:
         self.__width = value
 
     @property
-    def height(self):
-        """Get/self the height of the rectangle."""
-        return self.__height
+    def width(self):
+        """Get/self the width of the rectangle."""
+        return self.__width
 
-    @height.setter
-    def height(self, value):
+    @width.setter
+    def width(self, value):
+        """
+            Checking for TypeError and ValueError
+            then setting up the private var
+        """
         if not isistance(value, int):
-            raise TypeError("height must be an integer")
+            raise TypeError("width must be an integer")
         if value < 0:
-            raise ValueError("height must be >= 0")
-        self.__height = value
+            raise ValueError("widht must be >= 0")
+        self.__widht = value
