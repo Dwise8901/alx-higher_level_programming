@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Define a rectangle'''
+"""Define a rectangle"""
 
 
 class Rectangle:
@@ -25,10 +25,10 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        '''
+        """
             Checking for TypeError and ValueError
             then setting up the private var
-        '''
+        """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -113,7 +113,7 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        '''
+        """
             Creates a Rectangle instance where width and height are size
-        '''
+        """
         return Rectangle(size, size)
