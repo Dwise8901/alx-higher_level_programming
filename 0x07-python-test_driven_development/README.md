@@ -38,7 +38,7 @@ if size is less than 0, raise a ValueError exception with the message size must 
 if size is a float and is less than 0, raise a TypeError exception with the message size must be an integer
 You are not allowed to import any module
 
-4. 4. Text indentation
+4. Text indentation
 Write a function that prints a text with 2 new lines after each of these characters: ., ? and :
 
 Prototype: def text_indentation(text):
@@ -77,6 +77,7 @@ if m_a or m_b is not a rectangle (all ‘rows’ should be of the same size): ra
 If m_a and m_b can’t be multiplied: raise a ValueError exception with the message m_a and m_b can't be multiplied
 
 You are not allowed to import any module
+
 
 7. Lazy matrix multiplication
 Write a function that multiplies 2 matrices by using the module NumPy
