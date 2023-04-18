@@ -73,7 +73,7 @@ Each key in this dictionary represents an attribute to the instance
 This type of argument is called a “key-worded argument”. Argument order is not important.
 
 10. And now, the Square!
- Write the class Square that inherits from Rectangle:
+Write the class Square that inherits from Rectangle:
 
 In the file models/square.py
 Class Square inherits from Rectangle
